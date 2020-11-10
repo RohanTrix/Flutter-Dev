@@ -24,7 +24,9 @@ class LoginPageState extends State<LoginPage>{
     return Scaffold(
       backgroundColor: Colors.greenAccent,
       body: new Stack(
-        children: [],
+        children: <Widget>[
+          
+        ],
       ), 
     );
   } 
