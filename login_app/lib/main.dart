@@ -25,5 +25,5 @@ class LoginPageState extends State<LoginPage>{
       backgroundColor: Colors.black,
       body: new Container(), 
     );
-  }
+  } 
 }
