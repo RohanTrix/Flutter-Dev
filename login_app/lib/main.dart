@@ -25,7 +25,7 @@ class LoginPageState extends State<LoginPage>{
       backgroundColor: Colors.greenAccent,
       body: new Stack(
         children: <Widget>[
-          
+          Image(image: AssetImage,)
         ],
       ), 
     );
