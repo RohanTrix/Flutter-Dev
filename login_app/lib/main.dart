@@ -26,8 +26,8 @@ class LoginPageState extends State<LoginPage>{
       body: new Stack(
         children: <Widget>[
           Image(
-            image: AssetImage("assets/hoem.jpg"),
-            fit: BoxFi,)
+            image: AssetImage("assets/home.jpg"),
+            fit: BoxFit.cover,)
         ],
       ), 
     );
