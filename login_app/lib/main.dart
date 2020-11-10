@@ -9,6 +9,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home : new LoginPage(),
+      theme: new ThemeData(
+        primarySwatch: Colors.blue
+      ),
     );
   }
+}
+
+class LoginPage extends StatefulWidget{
+  @overrid
 }
