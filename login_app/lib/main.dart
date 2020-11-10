@@ -71,7 +71,7 @@ class LoginPageState extends State<LoginPage>
                             decoration:
                                 InputDecoration(labelText: "Enter email"),
                             keyboardType: TextInputType.emailAddress,
-                            obscureText: true,
+                            obscureText: false,
                           ),
                           TextFormField(
                             decoration:
@@ -81,6 +81,8 @@ class LoginPageState extends State<LoginPage>
                           ),
                           Padding(padding: const EdgeInsets.only(top: 20.0)),
                           new MaterialButton(
+                            height: 40,
+                            minWidth: 100.0,
                             color: Colors.teal,
                             textColor: Colors.white,
                             child: Text("Login"),
