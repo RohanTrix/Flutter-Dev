@@ -20,5 +20,9 @@ class LoginPage extends StatefulWidget {
 
 class LoginPageState extends State<LoginPage>{
   @override
-  Widget
+  Widget build(BuildContext context){
+    return Scaffold(
+      backgroundColor: ,
+    )
+  }
 }
