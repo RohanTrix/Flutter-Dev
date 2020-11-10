@@ -23,7 +23,9 @@ class LoginPageState extends State<LoginPage>{
   Widget build(BuildContext context){
     return Scaffold(
       backgroundColor: Colors.greenAccent,
-      body: new Container(), 
+      body: new Stack(
+        children: [],
+      ), 
     );
   } 
 }
