@@ -22,7 +22,8 @@ class LoginPageState extends State<LoginPage>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: ,
-    )
+      backgroundColor: Colors.black,
+      body: new Container(), 
+    );
   }
 }
