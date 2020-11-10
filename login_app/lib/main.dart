@@ -22,7 +22,7 @@ class LoginPageState extends State<LoginPage>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.greenAccent,
       body: new Container(), 
     );
   } 
