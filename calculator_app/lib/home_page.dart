@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-
-  var num1
-
-
-
   State createState() => HomePageState();
 }
 
 class HomePageState extends State<HomePage> {
+  var num1, num2, sum;
+  void doAddition() {
+    this.setState(() {
+      sum = num1 + num2;
+    });
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
