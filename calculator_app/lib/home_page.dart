@@ -34,7 +34,7 @@ class HomePageState extends State<HomePage> {
     this.setState(() {
       num1 = int.parse(t1.text);
       num2 = int.parse(t2.text);
-      sum = num1 / num2;
+      sum = int.parse(num1 / num2;
     });
   }
 
@@ -87,13 +87,13 @@ class HomePageState extends State<HomePage> {
                   children: [
                     new MaterialButton(
                       child: Text('*'),
-                      onPressed: doMul
+                      onPressed: doMultiplication
                       color: Colors.redAccent,
                     ),
                     new Padding(padding: const EdgeInsets.only(right: 20)),
                     new MaterialButton(
                       child: Text('/'),
-                      onPressed: () => {},
+                      onPressed: doDivision,
                       color: Colors.redAccent,
                     )
                   ],
