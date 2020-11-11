@@ -19,8 +19,11 @@ class HomePageState extends State<HomePage> {
               children: <Widget>[
                 new Text("Output: ",
                   style: new TextStyle(
-                    fontSize: 20.0, color: Colors.green
-                  ),),
+                    fontSize: 40.0, color: Colors.green, fontWeight: FontWeight.bold,
+                  ),
+                  ),
+                  
+
                 new TextField(
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(hintText: "Enter number 1"),
