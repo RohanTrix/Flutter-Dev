@@ -5,12 +5,16 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-  var num1, num2, sum;
+  var num1, num2, sum=0;
+  final TextEditingController t1v
+
+
   void doAddition() {
     this.setState(() {
       sum = num1 + num2;
     });
   }
+
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +47,7 @@ class HomePageState extends State<HomePage> {
                 new Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   new MaterialButton(
                     child: Text('+'),
-                    onPressed: () => {},
+                    onPressed: doAddition,
                     color: Colors.redAccent,
                   ),
                   new Padding(padding: const EdgeInsets.only(right: 20)),
