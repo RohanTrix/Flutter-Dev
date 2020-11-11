@@ -10,10 +10,10 @@ class HomePageState extends State<HomePage> {
       appBar: new AppBar(
         title: new Text("Calculator"),
       ),
-      body: Container( Columm(
+      body: Container(
+        child
 
           ),
-        ),
       ),
     );
   }
