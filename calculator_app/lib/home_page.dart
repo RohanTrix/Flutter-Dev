@@ -11,6 +11,8 @@ class HomePageState extends State<HomePage> {
 
   void doAddition() {
     this.setState(() {
+
+      num1 = int.parse()
       sum = num1 + num2;
     });
   }
@@ -38,11 +40,12 @@ class HomePageState extends State<HomePage> {
                 new TextField(
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(hintText: "Enter number 1"),
-                  
+                  controller: t1,
                 ),
                 new TextField(
                     keyboardType: TextInputType.number,
-                    decoration: InputDecoration(hintText: "Enter number 2")),
+                    decoration: InputDecoration(hintText: "Enter number 2"),
+                    controller: t2,),
                 new Padding(padding: const EdgeInsets.only(top: 20)),
                 new Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   new MaterialButton(
