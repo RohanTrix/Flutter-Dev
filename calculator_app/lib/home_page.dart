@@ -43,7 +43,6 @@ class HomePageState extends State<HomePage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.alphaBlend(foreground, background),
       appBar: new AppBar(
         title: new Text("Calculator"),
       ),
