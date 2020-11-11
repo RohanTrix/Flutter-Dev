@@ -4,17 +4,17 @@ class HomePage extends StatefulWidget {
   State createState() => HomePageState();
 }
 
-
-class HomePageState extends State<HomePage>{
-  State build( BuildContext context){
+class HomePageState extends State<HomePage> {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
         title: new Text("Calculator"),
       ),
       body: Container(
         child: new Center(
-          child: Text(""),
-        ) ,),
-    )
+          child: Text("Calculator App"),
+        ),
+      ),
+    );
   }
 }
