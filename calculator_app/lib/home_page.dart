@@ -10,7 +10,58 @@ class HomePageState extends State<HomePage> {
       appBar: new AppBar(
         title: new Text("Calculator"),
       ),
-      body: 
-      );
+      body: Container(
+        padding: const EdgeInsets.all(40),
+        child: new Center(
+          child: new Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+
+              children: <Widget>[
+                new Text("Output: ",
+                  style: new TextStyle(
+                    fontSize: 20.0, color: Colors.green
+                  ),),
+                new TextField(
+                  keyboardType: TextInputType.number,
+                  decoration: InputDecoration(hintText: "Enter number 1"),
+                ),
+                new TextField(
+                    keyboardType: TextInputType.number,
+                    decoration: InputDecoration(hintText: "Enter number 2")),
+                new Padding(padding: const EdgeInsets.only(top: 20)),
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.center, children: [
+                  new MaterialButton(
+                    child: Text('+'),
+                    onPressed: () => {},
+                    color: Colors.redAccent,
+                  ),
+                  new Padding(padding: const EdgeInsets.only(right: 20)),
+                  new MaterialButton(
+                    child: Text('-'),
+                    onPressed: () => {},
+                    color: Colors.redAccent,
+                  ),
+                ]),
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    new MaterialButton(
+                      child: Text('*'),
+                      onPressed: () => {},
+                      color: Colors.redAccent,
+                    ),
+                    new Padding(padding: const EdgeInsets.only(right: 20)),
+                    new MaterialButton(
+                      child: Text('/'),
+                      onPressed: () => {},
+                      color: Colors.redAccent,
+                    )
+                  ],
+                )
+              ]),
+        ),
+      ),
+    );
   }
 }
