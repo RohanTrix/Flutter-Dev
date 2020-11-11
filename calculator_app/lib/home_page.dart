@@ -5,7 +5,7 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-  var num1, num2, sum = 0;
+  var num1, num2, sum = 0.0;
   final TextEditingController t1 = new TextEditingController(text: "");
   final TextEditingController t2 = new TextEditingController(text: "");
 
@@ -87,7 +87,7 @@ class HomePageState extends State<HomePage> {
                   children: [
                     new MaterialButton(
                       child: Text('*'),
-                      onPressed: doMultiplication
+                      onPressed: doMultiplication,
                       color: Colors.redAccent,
                     ),
                     new Padding(padding: const EdgeInsets.only(right: 20)),
