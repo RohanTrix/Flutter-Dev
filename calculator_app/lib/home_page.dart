@@ -16,25 +16,25 @@ class HomePageState extends State<HomePage> {
       sum = num1 + num2;
     });
   }
-  void doSub() {
+  void doSubtraction() {
     this.setState(() {
       num1 = int.parse(t1.text);
       num2 = int.parse(t2.text);
-      sum = num1 + num2;
+      sum = num1 - num2;
     });
   }
-  void doAddition() {
+  void doMultiplication() {
     this.setState(() {
       num1 = int.parse(t1.text);
       num2 = int.parse(t2.text);
-      sum = num1 + num2;
+      sum = num1 * num2;
     });
   }
-  void doAddition() {
+  void doDivision() {
     this.setState(() {
       num1 = int.parse(t1.text);
       num2 = int.parse(t2.text);
-      sum = num1 + num2;
+      sum = num1 / num2;
     });
   }
 
@@ -78,7 +78,7 @@ class HomePageState extends State<HomePage> {
                   new Padding(padding: const EdgeInsets.only(right: 20)),
                   new MaterialButton(
                     child: Text('-'),
-                    onPressed: () => {},
+                    onPressed: doSubtraction,
                     color: Colors.redAccent,
                   ),
                 ]),
@@ -87,7 +87,7 @@ class HomePageState extends State<HomePage> {
                   children: [
                     new MaterialButton(
                       child: Text('*'),
-                      onPressed: () => {},
+                      onPressed: doMul
                       color: Colors.redAccent,
                     ),
                     new Padding(padding: const EdgeInsets.only(right: 20)),
