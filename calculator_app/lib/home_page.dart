@@ -12,7 +12,7 @@ class HomePageState extends State<HomePage> {
   void doAddition() {
     this.setState(() {
       num1 = int.parse(t1.text);
-      num2 = int.parse(t1.text);
+      num2 = int.parse(t2.text);
       sum = num1 + num2;
     });
   }
@@ -29,7 +29,7 @@ class HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 new Text(
-                  "Output: " + sum,
+                  "Output: $sum",
                   style: new TextStyle(
                     fontSize: 40.0,
                     color: Colors.green,
