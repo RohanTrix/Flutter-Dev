@@ -9,8 +9,12 @@ class HomePageState extends State<HomePage>{
   State build( BuildContext context){
     return Scaffold(
       appBar: new AppBar(
-        title: new Text,
+        title: new Text("Calculator"),
       ),
+      body: Container(
+        child: new Center(
+          child: Text(""),
+        ) ,),
     )
   }
 }
