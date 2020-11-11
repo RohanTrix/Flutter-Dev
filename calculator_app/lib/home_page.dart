@@ -5,7 +5,7 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-  var num1=0.0, num2=0.0, sum = 0.0;
+  var num1 = 0.0, num2 = 0.0, sum = 0.0;
   final TextEditingController t1 = new TextEditingController(text: "");
   final TextEditingController t2 = new TextEditingController(text: "");
 
@@ -16,25 +16,28 @@ class HomePageState extends State<HomePage> {
       sum = num1 + num2;
     });
   }
+
   void doSubtraction() {
     this.setState(() {
       num1 = double.parse(t1.text);
-      num2 = int.parse(t2.text);
+      num2 = double.parse(t2.text);
       sum = num1 - num2;
     });
   }
+
   void doMultiplication() {
     this.setState(() {
-      num1 = int.parse(t1.text);
-      num2 = int.parse(t2.text);
+      num1 = double.parse(t1.text);
+      num2 = double.parse(t2.text);
       sum = num1 * num2;
     });
   }
+
   void doDivision() {
     this.setState(() {
-      num1 = int.parse(t1.text);
-      num2 = int.parse(t2.text);
-      sum = num2 / num1;
+      num1 = double.parse(t1.text);
+      num2 = double.parse(t2.text);
+      sum = num1 / num2;
     });
   }
 
