@@ -5,4 +5,12 @@ class HomePage extends StatefulWidget {
 }
 
 
-class HomePageState extends State<HomePage>
+class HomePageState extends State<HomePage>{
+  State build( BuildContext context){
+    return Scaffold(
+      appBar: new AppBar(
+        title: new Text,
+      ),
+    )
+  }
+}
