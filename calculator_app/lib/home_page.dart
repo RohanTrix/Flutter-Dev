@@ -15,15 +15,16 @@ class HomePageState extends State<HomePage> {
         child: new Center(
           child: new Column(
               mainAxisAlignment: MainAxisAlignment.center,
-
               children: <Widget>[
-                new Text("Output: ",
+                new Text(
+                  "Output: ",
                   style: new TextStyle(
-                    fontSize: 40.0, color: Colors.green, fontWeight: FontWeight.bold,
+                    fontSize: 40.0,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold,
                   ),
-                  ),
-                  
-
+                ),
+                new Padding(padding: EdgeInsets.only(bottom: 20)),
                 new TextField(
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(hintText: "Enter number 1"),
@@ -32,8 +33,7 @@ class HomePageState extends State<HomePage> {
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(hintText: "Enter number 2")),
                 new Padding(padding: const EdgeInsets.only(top: 20)),
-                new Row(
-                  mainAxisAlignment: MainAxisAlignment.center, children: [
+                new Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   new MaterialButton(
                     child: Text('+'),
                     onPressed: () => {},
