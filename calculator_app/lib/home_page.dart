@@ -6,8 +6,8 @@ class HomePage extends StatefulWidget {
 
 class HomePageState extends State<HomePage> {
   var num1, num2, sum = 0;
-  final TextEditingController t1 = new TextEditingController(text: "0");
-  final TextEditingController t2 = new TextEditingController(text: "0");
+  final TextEditingController t1 = new TextEditingController(text: "");
+  final TextEditingController t2 = new TextEditingController(text: "");
 
   void doAddition() {
     this.setState(() {
