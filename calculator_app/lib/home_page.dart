@@ -16,6 +16,27 @@ class HomePageState extends State<HomePage> {
       sum = num1 + num2;
     });
   }
+  void doSub() {
+    this.setState(() {
+      num1 = int.parse(t1.text);
+      num2 = int.parse(t2.text);
+      sum = num1 + num2;
+    });
+  }
+  void doAddition() {
+    this.setState(() {
+      num1 = int.parse(t1.text);
+      num2 = int.parse(t2.text);
+      sum = num1 + num2;
+    });
+  }
+  void doAddition() {
+    this.setState(() {
+      num1 = int.parse(t1.text);
+      num2 = int.parse(t2.text);
+      sum = num1 + num2;
+    });
+  }
 
   Widget build(BuildContext context) {
     return Scaffold(
