@@ -29,7 +29,7 @@ class HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 new Text(
-                  "Output: ",
+                  "Output: " + sum,
                   style: new TextStyle(
                     fontSize: 40.0,
                     color: Colors.green,
