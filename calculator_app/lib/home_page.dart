@@ -34,7 +34,7 @@ class HomePageState extends State<HomePage> {
     this.setState(() {
       num1 = int.parse(t1.text);
       num2 = int.parse(t2.text);
-      sum = int.parse(num1 / num2;
+      sum = (num2 ~/ num1);
     });
   }
 
