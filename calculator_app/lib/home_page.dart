@@ -5,16 +5,15 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-  var num1, num2, sum=0;
-  final TextEditingController t1v
-
+  var num1, num2, sum = 0;
+  final TextEditingController t1 = new TextEditingController(text: "0");
+  final TextEditingController t2 = new TextEditingController(text: "0");
 
   void doAddition() {
     this.setState(() {
       sum = num1 + num2;
     });
   }
-
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,6 +38,7 @@ class HomePageState extends State<HomePage> {
                 new TextField(
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(hintText: "Enter number 1"),
+                  
                 ),
                 new TextField(
                     keyboardType: TextInputType.number,
